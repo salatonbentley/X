@@ -105,9 +105,9 @@ const Settings = () => {
         },
         {
           id: '9',
-          title: 'Help Center',
+          title: 'Network status',
           icon: <Ionicons name="help-circle-outline" size={24} color={theme.icon} />,
-          action: () => navigation.navigate('HelpCenter'),
+          action: () => navigation.navigate('NetContextScreen'),
         },
       ],
     },

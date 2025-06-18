@@ -2,7 +2,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
 import { NavigationContainer } from '@react-navigation/native';
-import Onboarding from '../screens/Onboarding';
+import Onboarding from '../screens/home/Onboarding';
 import Login from '../screens/auth/Login';
 import Register from '../screens/auth/Register';
 import BottomNavigation from './BottomNavigation';
@@ -17,7 +17,7 @@ import { AuthContext } from '../context/AuthContext';
 import ProductDetails from '../screens/Details/ProductDetails';
 import NewProduct from '../screens/Details/NewProduct';
 import Checkout from '../screens/checkout/Checkout';
-import OrderHistory from '../screens/OrderHistory';
+import OrderHistory from '../screens/Details/OrderHistory';
 import Feedback from '../screens/account/Feedback';
 import PaymentHistory from '../screens/account/PaymentHistory';
 import Profile from '../screens/account/Profile';
@@ -25,6 +25,7 @@ import Notification from '../screens/account/Notification';
 import PaymentMethods from '../screens/account/PaymentMethods';
 import Addresses from '../screens/account/Addresses';
 import HelpCenter from '../screens/account/HelpCenter';
+
 
 
 const Stack = createStackNavigator();
@@ -63,7 +64,8 @@ const StackNavigator = () => {
             <Stack.Screen name="Profile" component={Profile} options={{ headerShown: false }} />
             <Stack.Screen name="PaymentMethods" component={PaymentMethods} options={{ headerShown: false }} />
             <Stack.Screen name="Addresses" component={Addresses} options={{ headerShown: false }} />
-            <Stack.Screen name="HelpCenter" component={HelpCenter} options={{ headerShown: false }} />
+            {/* <Stack.Screen name="HelpCenter" component={HelpCenter} options={{ headerShown: false }} /> */}
+            {/* <Stack.Screen name="NetContextScreen" component={NetContextScreen} options={{ headerShown: false }} /> */}
           </>
         )}
       </Stack.Navigator>
